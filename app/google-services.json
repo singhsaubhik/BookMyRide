@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "157327279915",
+    "firebase_url": "https://bikeapp-de112.firebaseio.com",
+    "project_id": "bikeapp-de112",
+    "storage_bucket": "bikeapp-de112.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157327279915:android:7d9afdd2f6b9cae1",
+        "android_client_info": {
+          "package_name": "com.kiit.bike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157327279915-b215e9go1l6edlkg266v9t9qlfjt6cdo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5RbiEI3H0PXAycI7f5fCR2gVjHW6vTHM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

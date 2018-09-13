@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="0.35"
+             android:background="@drawable/profile_blur"
+             android:gravity="center"
+             android:orientation="vertical">
+             <FrameLayout
+                 android:layout_marginTop="20dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="120dp"
+                 android:layout_gravity="center"
+                 android:layout_weight="0">
+
+                 <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:id="@+id/imgProfile"
+                     android:layout_width="120dp"
+                     android:layout_height="110dp"
+                     android:layout_gravity="top|center"
+                     android:src="@drawable/nouser"
+                     app:civ_border_color="@android:color/white"
+                     app:civ_border_width="2dp" />
+
+
+                 <android.support.design.widget.FloatingActionButton
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/fabImagePick"
+                     app:fabSize="mini"
+                     app:backgroundTint="@color/colorPrimary"
+                     android:layout_gravity="right|bottom"
+                     android:src="@drawable/camera_w"
+                     android:adjustViewBounds="false"
+                     android:layout_alignWithParentIfMissing="false"
+                     android:layout_centerVertical="true"
+                     android:layout_centerHorizontal="true"
+                     app:elevation="1dp"
+                     android:layout_marginBottom="5dp"/>
+             </FrameLayout>
+         </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                     <android.support.design.widget.TextInputLayout
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content">
+
+                         <EditText
+                             android:id="@+id/etFName"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:hint="FIRST NAME"
+                             android:textColor="@android:color/black"
+                             android:singleLine="true"
+                             android:textColorHighlight="@color/grey"
+                             />
+                     </android.support.design.widget.TextInputLayout>
+                 <android.support.design.widget.TextInputLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_marginLeft="10dp"
+                     android:layout_height="wrap_content">
+
+                     <EditText
+                         android:id="@+id/etLName"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:hint="LAST NAME"
+                         android:textColor="@android:color/black"
+                         android:singleLine="true"
+                         android:textColorHighlight="@color/grey"
+                         />
+                 </android.support.design.widget.TextInputLayout>
+             </LinearLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:editable="false"
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="EMAIL"
+                        android:textColor="@android:color/black"
+                        android:singleLine="true"
+                        android:textColorHighlight="@color/grey"
+                        />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/etMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="MOBILE"
+                        android:textColor="@android:color/black"
+                        android:singleLine="true"
+                        android:textColorHighlight="@color/grey"
+                        />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/llSave"
+                android:layout_weight="0.11"
+                android:gravity="center">
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textColor="@android:color/black"
+                    android:text="SAVE"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/shadow"/>
+        </FrameLayout>
+
+</LinearLayout>

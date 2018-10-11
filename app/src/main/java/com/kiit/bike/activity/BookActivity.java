@@ -155,7 +155,7 @@ public class BookActivity extends AppCompatActivity {
         tvProductDescription.setText(bike_des);
         tvProductAddress.setText(bike_address);
         totalPrice = Double.parseDouble(bike_price) *(days+1);
-        tvProductPrice.setText("$" +totalPrice);
+        tvProductPrice.setText("Rs " +totalPrice);
         tvProductColor.setText("Bike Color : "+bike_color);
         tvProductNumber.setText(bike_number);
         tvStartDate.setText(start_date);

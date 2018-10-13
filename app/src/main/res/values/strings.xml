@@ -6,4 +6,5 @@
 
     <string name="settings">Settings</string>
     <string name="cancel">Cancel</string>
+    <string name="text_content_about_us">This is a project created by \n      Saubhik Singh \n Arshad Banoo \n Shubham Arya \n Neha Pandey</string>
 </resources>

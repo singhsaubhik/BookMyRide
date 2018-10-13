@@ -10,13 +10,10 @@
     android:orientation="vertical"
     android:layout_weight="0.3">
 <FrameLayout
+    android:background="#2247a6"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ImageView
-        android:scaleType="fitXY"
-        android:src="@drawable/splash_img"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

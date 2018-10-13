@@ -14,7 +14,7 @@
     android:layout_height="match_parent">
     <ImageView
         android:scaleType="fitXY"
-        android:src="@drawable/splash_img"
+        android:src="#53a6da"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
     <FrameLayout
@@ -48,7 +48,7 @@
                     android:id="@+id/tvNameUser"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="soumya ghosh"
+                    android:text="saubhik singh"
                     android:textSize="15sp"
                     android:textColor="@android:color/white"
                     android:textStyle="bold"/>
@@ -56,7 +56,7 @@
                     android:id="@+id/tvEmailUser"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="soumyaghosh269@gmail.com"
+                    android:text="singhsaubhik@gmail.com"
                     android:textSize="14sp"
                     android:textColor="@android:color/white"
                     android:textStyle="bold"/>
@@ -143,7 +143,7 @@
             <TextView
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
-                android:text="Book Ride"
+                android:text="Booked Ride"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
@@ -217,6 +217,31 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
                 android:text="Logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#262626"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llAboutUser"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/ic_info_black_24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="About Us"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"

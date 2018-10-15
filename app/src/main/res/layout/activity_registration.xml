@@ -145,7 +145,7 @@
                         android:textColor="@color/colorPrimary"
                         android:textSize="18sp"
                         android:id="@+id/tvAccept"
-                        android:text="Are You An Admin ?"/>
+                        android:text="Are You a vendor ?"/>
                 </LinearLayout>
                 <Button
                     android:id="@+id/btnSignUp"

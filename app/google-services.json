@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "157327279915",
-    "firebase_url": "https://bikeapp-de112.firebaseio.com",
-    "project_id": "bikeapp-de112",
-    "storage_bucket": "bikeapp-de112.appspot.com"
+    "project_number": "926228402671",
+    "firebase_url": "https://bookmyride-a00a5.firebaseio.com",
+    "project_id": "bookmyride-a00a5",
+    "storage_bucket": "bookmyride-a00a5.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:157327279915:android:7d9afdd2f6b9cae1",
+        "mobilesdk_app_id": "1:926228402671:android:d4b8270aba453af3",
         "android_client_info": {
           "package_name": "com.iva.bike"
         }
       },
       "oauth_client": [
         {
-          "client_id": "157327279915-b215e9go1l6edlkg266v9t9qlfjt6cdo.apps.googleusercontent.com",
+          "client_id": "926228402671-t6at9h7tmjt8ks3gupmqt5ukmkdtsa3s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iva.bike",
+            "certificate_hash": "987970547ee8227747a9397d1bdf95d5899abf41"
+          }
+        },
+        {
+          "client_id": "926228402671-ufs78mt289s89l9gfpngjtj19392hni2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC5RbiEI3H0PXAycI7f5fCR2gVjHW6vTHM"
+          "current_key": "AIzaSyDHKtOc0eKbulgxAK7cXuhYizZUPJRoWqQ"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926228402671-ufs78mt289s89l9gfpngjtj19392hni2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

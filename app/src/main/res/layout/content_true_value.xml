@@ -37,7 +37,7 @@
                 android:id="@+id/fourcard_include"
                 layout="@layout/four_card_layout"
                 android:layout_width="match_parent"
-                android:layout_height="230dp"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/ll1"
                 android:layout_marginTop="10dp" />
 
@@ -53,7 +53,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="BROWSE BY CATEGORY"
+                    android:text="TRENDING CARS"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="#FFFFFF" />
             </LinearLayout>

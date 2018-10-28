@@ -25,7 +25,7 @@ public class TrueValueActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_true_value2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("TRUEVALUE");
+        toolbar.setTitle("TrueValue");
         setSupportActionBar(toolbar);
 
         init();
@@ -38,13 +38,13 @@ public class TrueValueActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.snap_recycler);
         list = new ArrayList<>();
 
-        list.add(new Cars("BMW"));
-        list.add(new Cars("BMW"));
-        list.add(new Cars("BMW"));
-        list.add(new Cars("BMW"));
+        list.add(new Cars("BMW",R.drawable.a));
+        list.add(new Cars("BMW",R.drawable.b));
+        list.add(new Cars("BMW",R.drawable.c));
+        list.add(new Cars("BMW",R.drawable.d));
 
-        list.add(new Cars("BMW"));
-        list.add(new Cars("BMW"));
+        list.add(new Cars("BMW",R.drawable.e));
+        list.add(new Cars("BMW",R.drawable.e));
 
         adapter = new SnapCardAdapter(list,this);
 

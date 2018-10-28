@@ -6,7 +6,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.Encoder;
+import com.bumptech.glide.request.RequestOptions;
 import com.iva.bike.R;
 import com.iva.bike.module.Cars;
 
@@ -32,6 +37,11 @@ public class SnapCardAdapter extends RecyclerView.Adapter<SnapCardAdapter.MyHold
 
     @Override
     public void onBindViewHolder(@NonNull MyHolder holder, int position) {
+        Glide.with(context).load(list.get(position).getImg())
+                .apply(new RequestOptions().circleCrop())
+                .into(holder.image);
+
+
 
     }
 
@@ -41,9 +51,15 @@ public class SnapCardAdapter extends RecyclerView.Adapter<SnapCardAdapter.MyHold
     }
 
     class MyHolder extends RecyclerView.ViewHolder{
+        ImageView image;
+        TextView textView;
 
         public MyHolder(View itemView) {
             super(itemView);
+
+            image = itemView.findViewById(R.id.snap_recycler_image);
+            textView = itemView.findViewById(R.id.snap_recycler_textview);
+
         }
     }
 }

@@ -149,6 +149,30 @@
                 android:textSize="16sp"
                 android:textColor="#262626"/>
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTrueValue"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/ic_cars_24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="True Value Cars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#262626"/>
+        </LinearLayout>
     </LinearLayout>
     <View
         android:layout_width="match_parent"

@@ -44,7 +44,7 @@
                     android:id="@+id/tvName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="soumya ghosh"
+                    android:text="Saubhik Singh"
                     android:textSize="15sp"
                     android:textColor="@android:color/white"
                     android:textStyle="bold"/>
@@ -52,7 +52,7 @@
                     android:id="@+id/tvEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="soumyaghosh269@gmail.com"
+                    android:text="singhsaubhik@gmail.com"
                     android:textSize="14sp"
                     android:textColor="@android:color/white"
                     android:textStyle="bold"/>

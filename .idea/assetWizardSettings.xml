@@ -16,11 +16,26 @@
                             <entry key="launcher">
                               <value>
                                 <PersistentState>
+                                  <option name="children">
+                                    <map>
+                                      <entry key="foregroundImage">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="scalingPercent" value="68" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="0167a6" />
-                                      <entry key="foregroundImage" value="C:\Users\HEMANT SRIVASTAVA\Desktop\icon\icon.png" />
+                                      <entry key="backgroundColor" value="d8dbdd" />
+                                      <entry key="foregroundImage" value="C:\Users\HEMANT SRIVASTAVA\Desktop\icon\20181011_222117_0001.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -51,7 +66,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_info_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_directions_car_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -61,8 +76,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="0907db" />
-                            <entry key="outputName" value="ic_info_black_24dp" />
+                            <entry key="color" value="010105" />
+                            <entry key="outputName" value="ic_cars_24dp" />
                             <entry key="sourceFile" value="C:\Users\HEMANT SRIVASTAVA" />
                           </map>
                         </option>

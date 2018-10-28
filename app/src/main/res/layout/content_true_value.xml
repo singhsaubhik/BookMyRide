@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.TrueValueActivity"
+    tools:showIn="@layout/activity_true_value2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_cover">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BROWSE BY CATEGORY"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+
+            <include
+                android:id="@+id/fourcard_include"
+                layout="@layout/four_card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@+id/ll1"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_below="@+id/fourcard_include"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ll2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_cover">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BROWSE BY CATEGORY"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/snap_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/ll2"
+                android:layout_marginTop="10dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</android.support.v4.widget.NestedScrollView>

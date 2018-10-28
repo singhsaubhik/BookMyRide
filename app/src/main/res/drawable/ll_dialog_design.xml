@@ -7,7 +7,9 @@
 
 
 
-    <stroke android:color="#cccccc" android:width="2dp" ></stroke>
+    <stroke android:color="#cccccc" android:width="2dp" >
+
+    </stroke>
 
     <!--  <corners
           android:bottomRightRadius="15dp"

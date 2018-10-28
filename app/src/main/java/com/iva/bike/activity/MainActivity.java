@@ -11,6 +11,7 @@ import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tvNameUser,tvEmailUser;
     CircleImageView imgProfileUser;
-    LinearLayout llLogoutUser,llSettingsUser,llMyRideUser,llBookRideUser,llHeaderUser,llHeadAboutUs;
+    LinearLayout llLogoutUser,llSettingsUser,llMyRideUser,llBookRideUser,llHeaderUser,llHeadAboutUs,llTrueValueCars;
     TextView tvTypeUser;
     ProgressDialog progressDialog,mProgressDialog;
     private RequestOptions requestOptions;
@@ -134,6 +135,11 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setTitle("Dashboard");
         toolbar.setNavigationIcon(R.drawable.ic_menu);
         setSupportActionBar(toolbar);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.splash_img));
+        }
 
         requestOptions = new RequestOptions();
         requestOptions.placeholder(R.drawable.nouser);
@@ -194,6 +200,8 @@ public class MainActivity extends AppCompatActivity {
         llLogout = (LinearLayout)findViewById(R.id.llLogout);
         llHeader = (LinearLayout)findViewById(R.id.llHeader);
         llHeadAboutUs = findViewById(R.id.llAboutUser);
+        llTrueValueCars = findViewById(R.id.llTrueValue);
+
 
         llMyRideUser = (LinearLayout)findViewById(R.id.llMyRideUser);
         llBookRideUser = (LinearLayout)findViewById(R.id.llBookRideUser);
@@ -434,6 +442,14 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 });
+            }
+        });
+
+        llTrueValueCars.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,TrueValueActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.iva.bike">
+
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,48 +25,46 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".activity.SignUpActivity"
+        <activity
+            android:name=".activity.SignUpActivity"
             android:screenOrientation="userPortrait"
-            android:windowSoftInputMode="stateHidden|adjustResize"/>
-
-        <activity android:name=".activity.LoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.LoginActivity"
             android:screenOrientation="userPortrait"
-            android:windowSoftInputMode="stateHidden|adjustResize"/>
-
-        <activity android:name=".activity.MainActivity"
-            android:screenOrientation="userPortrait"/>
-
-        <activity android:name=".activity.ProfileActivity"
-            android:screenOrientation="userPortrait"/>
-
-        <activity android:name=".activity.CreateBikeActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".activity.CreateBikeActivity"
             android:screenOrientation="userPortrait"
-            android:windowSoftInputMode="adjustResize|stateHidden"/>
-
-        <activity android:name=".activity.AddressActivity"
-            android:screenOrientation="userPortrait"/>
-
-        <activity android:name=".activity.BookActivity"
-            android:screenOrientation="userPortrait"/>
-
-        <activity android:name=".activity.BookRideActivity"
-            android:screenOrientation="userPortrait"/>
-
-        <activity android:name=".activity.BookOrderActivity"
-            android:screenOrientation="userPortrait"/>
-
-        <activity android:name=".activity.HistoryActivity"
-            android:screenOrientation="userPortrait"/>
-
-        <activity android:name=".activity.ContactUsActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.AddressActivity"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".activity.BookActivity"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".activity.BookRideActivity"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".activity.BookOrderActivity"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".activity.HistoryActivity"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".activity.ContactUsActivity"
             android:screenOrientation="userPortrait"
-            android:windowSoftInputMode="stateHidden|adjustResize"/>
-
-        <activity android:name=".activity.RevenueActivity"
-            android:screenOrientation="userPortrait"/>
-
-
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.RevenueActivity"
+            android:screenOrientation="userPortrait" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -72,13 +72,16 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
         <service
             android:name=".service.LocationUpdaterService"
             android:enabled="true"
-            android:exported="true" >
-        </service>
+            android:exported="true" />
 
-
+        <activity
+            android:name=".activity.TrueValueActivity"
+            android:label="@string/title_activity_true_value"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

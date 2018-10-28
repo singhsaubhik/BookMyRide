@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card1"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:paddingBottom="10dp"
+                android:layout_marginStart="65dp"
+                android:layout_width="120dp"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="#fd5dc2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="BRAND"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:layout_toEndOf="@+id/card1"
+                android:id="@+id/card2"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:paddingBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="120dp"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@color/colorPrimary"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="BUDGET"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <android.support.v7.widget.CardView
+                android:id="@+id/card3"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:paddingBottom="10dp"
+                android:layout_marginStart="65dp"
+                android:layout_width="120dp"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="#aff26d"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="BODY TYPE"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_toEndOf="@+id/card3"
+                android:id="@+id/card4"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:paddingBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="120dp"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_petrol"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="FUEL TYPE"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
